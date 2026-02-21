@@ -4,8 +4,10 @@ using System.Runtime.CompilerServices;
 namespace OPPconcepts.Backend
 {
     public class Date
+        //publico= modificableen el main
     {
-        //atributos
+        //fields
+        //atributos (campos de clase (privados))
         private int _year;
         private int _month;
         private int _day;
@@ -40,6 +42,7 @@ namespace OPPconcepts.Backend
             get => _day;
             set => _day = ValidateDay(value);
         }
+        //Methods
         public override string ToString()
         {
             return $"{Year:0000}/{Month:00}/{Day:00}";

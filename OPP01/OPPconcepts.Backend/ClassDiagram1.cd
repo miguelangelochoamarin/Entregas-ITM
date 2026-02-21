@@ -1,11 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="OPPconcepts.Backend.Date">
-    <Position X="6.5" Y="2" Width="2" />
+    <Position X="6" Y="6.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAJAAAAAAEAAEAAAMAAAAAAAAEMAAAgAAAAAA=</HashCode>
       <FileName>Date.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="OPPconcepts.Backend.Employee">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <AssociationLine Name="BornDay" Type="OPPconcepts.Backend.Date" FixedFromPoint="true">
+      <Path>
+        <Point X="6.625" Y="5.267" />
+        <Point X="6.625" Y="6.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="HireDay" Type="OPPconcepts.Backend.Date" FixedFromPoint="true">
+      <Path>
+        <Point X="7.562" Y="5.267" />
+        <Point X="7.562" Y="6.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.134" Y="0.228" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAACAAAAEEABAAAAAAQAAAAAAAAAACAAAAAg=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BornDay" />
+      <Property Name="HireDay" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

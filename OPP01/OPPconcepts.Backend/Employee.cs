@@ -36,8 +36,7 @@ public abstract class Employee
     //Methods
     public override string ToString()
     {
-        return  $"(Id)/t(firstName) (Lastname) /n/t" +
-                $"Value to pay: {GetvalueToPay()}";
+        return $"{Id}\t {FirtsName} {LastName} \n\t Value to pay: {GetvalueToPay(),20:C2}";
     }
     public abstract decimal GetvalueToPay();
     

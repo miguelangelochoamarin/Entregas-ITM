@@ -36,8 +36,15 @@
   <Class Name="OPPconcepts.Backend.SalaryEmployee">
     <Position X="8.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgCAQQAAA=</HashCode>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAACAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OPPconcepts.Backend.HourlyEmployee">
+    <Position X="8.25" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAABAAAAAAAAAAEAAgAAAAAAABEAAAAAAAACAAAAAE=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

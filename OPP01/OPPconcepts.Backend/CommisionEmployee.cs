@@ -18,7 +18,8 @@ public class CommisionEmployee : Employee
     public CommisionEmployee(int id, string firtsName, string lastName, bool isActive, Date bornDay, Date hireDay, float commisionPercent, decimal sales) : 
         base(id, firtsName, lastName, isActive, bornDay, hireDay)
     {
-
+        CommisionPercent = commisionPercent;
+        Sales = sales;
     }
     
     //Properties
@@ -38,15 +39,15 @@ public class CommisionEmployee : Employee
 
     public override string ToString() => base.ToString() + $"\n\t" +
         $"Commision percent: {CommisionPercent,20:P2}\n\t" +
-        $"Sales......... {Sales,20:C2}";
+        $"Sales.........: {Sales,20:C2}";
 
     private float ValidateCommisionPercent(float commisionPercent)
     {
         {
-            if (CommisionPercent < 0 || commisionPercent > 1)
+            if (commisionPercent < 0 || commisionPercent > 1)
                 throw new ArgumentOutOfRangeException(nameof(commisionPercent), " Commision Percent must be betwen 0 and 1.");
         }
-        return CommisionPercent;
+        return commisionPercent;
     }
     private decimal ValidateSales(decimal sales) 
     { 

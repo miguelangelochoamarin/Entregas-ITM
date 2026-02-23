@@ -28,9 +28,9 @@ public class BaseCommisionEmployee: CommisionEmployee
 
     public override decimal GetvalueToPay()=>  base.GetvalueToPay() + Salary;
 
-    public override string ToString() =>  $"{base.ToString()} " + $"\n\tSalary baase...:(Salary,20:C2)";
-    
-    
+    public override string ToString() =>  $"{base.ToString()} " + $"\n\tSalary baase...: {Salary,23:C2}";
+
+
     private decimal ValidateSalary(decimal salary)
     {
         if (salary < 500000)

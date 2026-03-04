@@ -21,10 +21,8 @@ public abstract class Employee
         BornDay = bornDay;
         HireDay = hireDay;
     }
-
-    
-
-   
+        
+     
     //properties
     public int Id { get; set; }
     public string FirtsName { get; set; } = null!;
